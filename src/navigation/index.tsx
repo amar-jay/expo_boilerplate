@@ -18,13 +18,19 @@ import TabOneScreen from '../screens/TabOneScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
 import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../../types';
 import LinkingConfiguration from './LinkingConfiguration';
+import { ThemeProvider } from '@shopify/restyle';
+import { activeThemeAtom } from '@/states/theme';
+import { useAtom } from 'jotai';
 
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName }) {
+  const [theme] = useAtom(activeThemeAtom);
   return (
     <NavigationContainer
       linking={LinkingConfiguration}
       theme={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <RootNavigator />
+      <ThemeProvider theme={theme}>
+          <RootNavigator />
+      </ThemeProvider>
     </NavigationContainer>
   );
 }
