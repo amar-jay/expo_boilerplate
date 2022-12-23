@@ -81,6 +81,15 @@ const theme = createTheme({
       //textDecorationLine: "underline",
       fontWeight: "bold",
       color: "$headerBarBackground"
+    },
+    sectionTitle: {
+      textAlign: "left",
+      marginBottom: "md",
+      letterSpacing: 1,
+      color: "$primary",
+      fontWeight: "bold",
+      textDecorationLine: "underline",
+      fontSize: 28
     }
   },
   barVariants: {
