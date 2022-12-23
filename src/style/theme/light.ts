@@ -1,5 +1,5 @@
 import { createTheme } from "@shopify/restyle";
-import { StatusBarStyle } from "react-native";
+import { StatusBarStyle } from "expo-status-bar";
 
 const colorPalette = {
   white: 'white',
@@ -61,7 +61,7 @@ const theme = createTheme({
 		hg: 128
 	},
 	statusBar: {
-		barStyle: 'dark-content' as StatusBarStyle
+		barStyle: 'dark' as StatusBarStyle
 	},
 	textVariants: {
 		defaults: {

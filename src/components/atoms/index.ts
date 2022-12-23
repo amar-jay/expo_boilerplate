@@ -1,9 +1,9 @@
-import  SafeAreaView, { SafeAreaViewProps } from './SafeAreaView';
-import Box, { BoxProps } from './Box';
-import Container from './Container';
-import Text, { TextProps } from './Text';
-import Touchable, { TouchableProps } from './Touchable';
-import FeatherIcon, { IconProps } from './Icon';
+import  SafeAreaView, { SafeAreaViewProps } from './safe-area-view';
+import Box, { BoxProps } from './box';
+import Container from './container';
+import Text, { TextProps } from './text';
+import Touchable, { TouchableProps } from './touchable';
+import FeatherIcon, { IconProps } from './icon';
 
 
 export type {

@@ -1,6 +1,6 @@
 import { createTheme } from "@shopify/restyle";
 import light, { Theme } from './light';
-import { StatusBarStyle } from 'react-native'
+import { StatusBarStyle } from 'expo-status-bar';
 
 const colorPalette = {
 	slate00: '#1b1c1d',
@@ -33,7 +33,7 @@ const theme = createTheme<Theme>({
     $fieldInputPlaceholderTextColor: colorPalette.slate100
   },
   statusBar: {
-    barStyle: 'light-content' as StatusBarStyle
+    barStyle: 'light' as StatusBarStyle
   },
   textVariants: {
     ...light.textVariants

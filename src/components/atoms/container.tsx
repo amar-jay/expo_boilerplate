@@ -1,5 +1,5 @@
 import React from 'react';
-import Box, { BoxProps } from './Box';
+import Box, { BoxProps } from './box';
 
 type Props = BoxProps & { children: React.ReactNode };
 const Container: React.FC<Props> = ({children, ...props}) => {
