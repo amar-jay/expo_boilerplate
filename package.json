@@ -6,7 +6,7 @@
   "author": "amar-jay<me@themanan.me> (https://themanan.me)",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
+    "start": "expo start --tunnel",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
